@@ -8,13 +8,23 @@ To be able to use it you have to extend it with another image.
 For example:
 The following folder structure is assumed:
 
+```
 ROOT of image
 |
-- files
-  |
-  - vhost.conf
-  |
-  - start.sh
++-+ 
+   \ 
+    files
+      +
+      |
+      +-+
+      |  \ 
+      |   vhost.conf
+      |
+      +-+
+         \ 
+          start.sh
+```
+
 
 ```
 FROM mychiara/nginx
